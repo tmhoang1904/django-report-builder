@@ -7,10 +7,10 @@
 {% endblock %}
 
 {% block object-tools-items %}
-  {% if 'starred' in request.GET %}
-    <li><a href="./">{% trans "Manage all Reports" %}</a></li>
-  {% else %}
-    <li><a href="./?starred=Starred">{% trans "View Starred Reports" %}</a></li>
-  {% endif %}
+{#  {% if 'starred' in request.GET %}#}
+{#    <li><a href="./">{% trans "Manage all Reports" %}</a></li>#}
+{#  {% else %}#}
+{#    <li><a href="./?starred=Starred">{% trans "View Starred Reports" %}</a></li>#}
+{#  {% endif %}#}
   {{ block.super }}
 {% endblock %}
